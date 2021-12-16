@@ -107,7 +107,7 @@ class line():
                 #self.image.putpixel([x,y], (200,0,0,255))
                 # y = mx+c | we plug the new xy into the equation to see if it is true, if so then its on the line
                 
-                if math.isclose(y,(m*x)+c,rel_tol = 0.01, abs_tol  = 1):
+                if y == (m*x)+c:
                     #image, pos, radius, baseCol
                     circle(self.image,[x,y],self.brushSize,self.baseCol).render()
 
